@@ -1,13 +1,100 @@
 body {
-    /***
+  /***
       ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+  //  background-color: white;
+  //  .content {
+  //   font-size: 14px;
+  //  }
+  //  h1 {
+  //   color: black;
+  //  }
+
+  /* // These colors are OK, but not great
+  $light: #F4F4EF; // Light Shades: Cararra #F4F4EF
+  $lightAccent: #867F89; // Light Accent: Mamba #867F89
+  $brand: #9CA1A8; // Main brand color: Grey Chateau #9CA1A8
+  $darkAccent: #728494; // Dark Accent: Slate Grey #728494
+  $dark: #474A59; // Dark Shades: Trout #474A59
+*/
+
+
+  $eerie-black: #262626ff;
+  $middle-grey: #8a817cff;
+  $pale-silver: #bcb8b1ff;
+  $isabelline: #f4f3eeff;
+  $green-blue: #0267c1ff;
+
+  $light: $isabelline;
+  $lightAccent: $middle-grey;
+  $brand: $pale-silver;
+  $darkAccent: $green-blue;
+  $dark: $eerie-black;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $light;
+  }
+
+  // p,
+  // ul,
+  // li,
+  // text-normal {
+  //   color: #F4F4EF;
+  // }
+
+  background-color: $dark  !important;
+  color: $light  !important;
+
+  pre,
+  code {
+    color: $light  !important;
+    background-color: $darkAccent  !important;
+    // background-color: $brand  !important;
+  }
+
+  /*
+.theme-dark {
+    --background-primary: #202020;
+    --background-primary-alt: #1a1a1a;
+    --background-secondary: #161616;
+    --background-secondary-alt: #000000;
+    --background-modifier-border: #333;
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #197300;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #470000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --text-accent: #7f6df2;
+    --text-accent-hover: #8875ff;
+    --text-normal: #dcddde;
+    --text-muted: #999;
+    --text-muted-rgb: 153, 153, 153;
+    --text-faint: #666;
+    --text-error: #ff3333;
+    --text-error-hover: #990000;
+    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+    --text-selection: rgba(23, 48, 77, 0.99);
+    --text-on-accent: #dcddde;
+    --interactive-normal: #2a2a2a;
+    --interactive-hover: #303030;
+    --interactive-accent: #483699;
+    --interactive-accent-rgb: 72, 54, 153;
+    --interactive-accent-hover: #4d3ca6;
+    --interactive-success: #197300;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+    --highlight-mix-blend-mode: lighten;
+}
+  */
 }
