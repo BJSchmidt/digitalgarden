@@ -3,12 +3,12 @@ const markdownIt = require("markdown-it");
 const fs = require('fs');
 const matter = require('gray-matter');
 const faviconPlugin = require('eleventy-favicon');
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
     let markdownLib = markdownIt({
-            breaks: true,
-            html: true
-        })
+        breaks: true,
+        html: true
+    })
         .use(require("markdown-it-footnote"))
         .use(require('markdown-it-mathjax3'), {
             tex: {
@@ -29,9 +29,9 @@ module.exports = function(eleventyConfig) {
             liClass: 'task-list-item'
         })
         .use(namedHeadingsFilter)
-        .use(function(md) {
+        .use(function (md) {
             //https://github.com/DCsunset/markdown-it-mermaid-plugin
-            const origFenceRule = md.renderer.rules.fence || function(tokens, idx, options, env, self) {
+            const origFenceRule = md.renderer.rules.fence || function (tokens, idx, options, env, self) {
                 return self.renderToken(tokens, idx, options, env, self);
             };
             md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
@@ -63,7 +63,7 @@ module.exports = function(eleventyConfig) {
 
 
 
-            const defaultImageRule = md.renderer.rules.image || function(tokens, idx, options, env, self) {
+            const defaultImageRule = md.renderer.rules.image || function (tokens, idx, options, env, self) {
                 return self.renderToken(tokens, idx, options, env, self);
             };
             md.renderer.rules.image = (tokens, idx, options, env, self) => {
@@ -83,10 +83,10 @@ module.exports = function(eleventyConfig) {
             };
 
 
-            const defaultLinkRule = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+            const defaultLinkRule = md.renderer.rules.link_open || function (tokens, idx, options, env, self) {
                 return self.renderToken(tokens, idx, options, env, self);
             };
-            md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
+            md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
                 const aIndex = tokens[idx].attrIndex('target');
                 const classIndex = tokens[idx].attrIndex('class');
 
@@ -109,8 +109,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setLibrary("md", markdownLib);
 
-    eleventyConfig.addFilter('link', function(str) {
-        return str && str.replace(/\[\[(.*?\|.*?)\]\]/g, function(match, p1) {
+    eleventyConfig.addFilter('link', function (str) {
+        return str && str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
             //Check if it is an embedded excalidraw drawing or mathjax javascript
             if (p1.indexOf("],[") > -1 || p1.indexOf('"$"') > -1) {
                 return match;
@@ -140,19 +140,19 @@ module.exports = function(eleventyConfig) {
                 deadLink = true;
             }
 
-            return `<a class="internal-link ${deadLink?'is-unresolved':''}" href="${permalink}${headerLinkPath}">${title}</a>`;
+            return `<a class="internal-link ${deadLink ? 'is-unresolved' : ''}" href="${permalink}${headerLinkPath}">${title}</a>`;
         });
     })
 
-    eleventyConfig.addFilter('highlight', function(str) {
-        return str && str.replace(/\=\=(.*?)\=\=/g, function(match, p1) {
+    eleventyConfig.addFilter('highlight', function (str) {
+        return str && str.replace(/\=\=(.*?)\=\=/g, function (match, p1) {
             return `<mark>${p1}</mark>`;
         });
     });
 
 
-    eleventyConfig.addTransform('callout-block', function(str) {
-        return str && str.replace(/<blockquote>((.|\n)*?)<\/blockquote>/g, function(match, content) {
+    eleventyConfig.addTransform('callout-block', function (str) {
+        return str && str.replace(/<blockquote>((.|\n)*?)<\/blockquote>/g, function (match, content) {
             let titleDiv = "";
             let calloutType = "";
             const calloutMeta = /\[!(\w*)\](\s?.*)/g;
@@ -160,7 +160,7 @@ module.exports = function(eleventyConfig) {
                 return match;
             }
 
-            content = content.replace(calloutMeta, function(metaInfoMatch, callout, title) {
+            content = content.replace(calloutMeta, function (metaInfoMatch, callout, title) {
                 calloutType = callout;
                 titleDiv = title.replace("<br>", "") ?
                     `<div class="admonition-title">${title}</div>` :
@@ -205,7 +205,7 @@ function namedHeadings(md, state) {
 
     var ids = {}
 
-    state.tokens.forEach(function(token, i) {
+    state.tokens.forEach(function (token, i) {
         if (token.type === 'heading_open') {
             var text = md.renderer.render(state.tokens[i + 1].children, md.options)
             var id = headerToId(text);
