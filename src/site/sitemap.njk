@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sitemap</title>
+    {%include "components/pageheader.njk"%}
+  </head>
+  <body class="theme-{{meta.baseTheme}} markdown-preview-view">
+    {%include "components/notegrowthhistory.njk"%}
+    <div class="content">
+      {% if dgHomeLink !== false%}
+        <a href="/">🏡 Back Home</a>
+      {% endif %}
+      <br><br>
+      Sitemap
+      <ul>
+        {# {%- for post in collections.all -%}
+          {% if post.data.title !== "404" %}
+            <li>
+              <a href="{{ post.url }}">{{ post.url }}</a>
+            </li>
+          {% endif %}
+        {%- endfor -%} #}
+        {% set regExp = r/404|sitemap/g%}
+        {%- for post in collections.all -%}
+          {%- if regExp.test(post.url) %}
+          {% elif post.url == '/' %}
+            {# <li>
+              <a href="{{ post.url }}">Home</a>
+            </li> #}
+          {% else %}
+            <li>
+              <a href="{{ post.url }}">{{ post.url }}</a>
+            </li>
+          {%- endif %}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </body>
+</html>
