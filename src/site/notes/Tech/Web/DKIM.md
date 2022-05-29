@@ -53,10 +53,10 @@ Strings : {k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAviPGBk4ZB64UfSqW
 
 # Additional Resources
 
-https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
+[DomainKeys Identified Mail - Wikipedia](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
 
-http://dkim.org/
+[DKIM.org](http://dkim.org/)
 
-http://dkim.org/info/DKIM-teaser-03.pdf
+[DKIM.org overview pdf](http://dkim.org/info/DKIM-teaser-03.pdf)
 
-http://dkim.org/Misc/DKIM-perform-en.pdf
+[DKIM.org perform pdf](http://dkim.org/Misc/DKIM-perform-en.pdf)
