@@ -10,6 +10,25 @@
       {%- for garden in collections.gardenEntry -%}
         {{garden.templateContent | link | highlight | safe }}
       {%- endfor -%}
+      <br><br>
+      <h2>Most Recent Changes</h2>
+      <ol>
+        {# Exclude 404 & Sitemap page #}
+        {% set regExp = r/404|sitemap/g%}
+        {%- for post in collections.all -%}
+          {% if loop.index0 < 10 %}
+            {%- if regExp.test(post.url) %}
+              {# Exclude Home (/) #}
+            {% elif post.url == '/' %}
+            {% else %}
+              <li>
+                <a href="{{ post.url }}">{{ post.url }}</a>
+              </li>
+            {%- endif %}
+          {%- endif %}
+        {%- endfor -%}
+      </ol>
+      <br>
       For a list of all posts see the
       <a href="/sitemap/">Sitemap</a>
     </div>
