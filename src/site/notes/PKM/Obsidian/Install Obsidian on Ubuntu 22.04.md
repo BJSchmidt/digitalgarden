@@ -3,8 +3,6 @@
 ---
 
 
-# Install Obsidian on Ubuntu 22.04
-
 When trying to install the Obsidian snap package on Ubuntu when downloaded direct from https://obsidian.md/download the follow error results:
 
 ``` bash
