@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tech/web/dkim/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/tech/web/dkim/"}
 ---
 
 
