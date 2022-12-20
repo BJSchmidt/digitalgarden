@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/pkm/obsidian/media-extended/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/pkm/obsidian/media-extended/"}
 ---
 
 
 # [Media Extended](https://github.com/aidenlx/media-extended)
 
-The Media Extended plugin for [[PKM/Obsidian/Obsidian|Obsidian]] lets you play and take notes on videos inside of Obsidian with timestamps!
+The Media Extended plugin for [[PKM/Obsidian/Obsidian\|Obsidian]] lets you play and take notes on videos inside of Obsidian with timestamps!
 
 This works best when combined with the [Templater extension](https://github.com/SilentVoid13/Templater) to allow you to jump to the end of the inserted link.
 
@@ -34,7 +34,7 @@ Used to open a video from a link in a new pane
 
 Insert the Timestamp Template.
 
-### [[Templater|Templater]]: Jump to Next Cursor Location
+### [[Templater\|Templater]]: Jump to Next Cursor Location
 
 `Ctrl-k`
 
