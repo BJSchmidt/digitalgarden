@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tech/windows/windows-time/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/tech/windows/windows-time/"}
 ---
 
 
@@ -33,7 +33,7 @@ w32tm /config /syncfromflags:manual /manualpeerlist:"pool.ntp.org"
 
 https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/domain-time-synchronization-in-the-age-of-working-from-home/ba-p/1440820
 
-# [[Tech/Windows/Windows|Windows]] NTP Client Flags
+# [[Tech/Windows/Windows\|Windows]] NTP Client Flags
 
 The best documentation I can find for what the flags mean is here:
 
