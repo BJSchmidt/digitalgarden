@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/tech/windows/remote-desktop/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/tech/windows/remote-desktop/"}
 ---
 
 
-# Enable Remote Desktop via [[Tech/Programming/Powershell/PowerShell|PowerShell]]
+# Enable Remote Desktop via [[Tech/Programming/Powershell/PowerShell\|PowerShell]]
 
 ```powershell
 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
