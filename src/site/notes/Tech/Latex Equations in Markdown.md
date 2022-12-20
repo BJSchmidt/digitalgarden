@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/tech/latex-equations-in-markdown/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/tech/latex-equations-in-markdown/"}
 ---
 
 
-# Latex Equations in [[PKM/Obsidian/Markdown|Markdown]]
+# Latex Equations in [[PKM/Obsidian/Markdown\|Markdown]]
 
 https://ashki23.github.io/markdown-latex.html#latex-equations
 
@@ -25,4 +25,4 @@ https://ashki23.github.io/markdown-latex.html#latex-equations
 - $\dfrac{Retail}{CostPerSheet/72*UI}=Markup$
 ```
 
-Also see [[PKM/Obsidian/Markdown#Math|Markdown#Math]]
+Also see [[PKM/Obsidian/Markdown#Math\|Markdown#Math]]
