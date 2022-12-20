@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/pkm/obsidian/install-obsidian-on-ubuntu-22-04/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/pkm/obsidian/install-obsidian-on-ubuntu-22-04/"}
 ---
 
 
