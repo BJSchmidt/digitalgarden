@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/tech/windows/set-windows-network-to-private/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/tech/windows/set-windows-network-to-private/"}
 ---
 
 
 # Set Windows Network Category to Private
 
-Open an elevated [[Tech/Programming/Powershell/PowerShell|PowerShell]] session
+Open an elevated [[Tech/Programming/Powershell/PowerShell\|PowerShell]] session
 
 Get current profiles. Make sure you are logged on to the network you want to change.
 
