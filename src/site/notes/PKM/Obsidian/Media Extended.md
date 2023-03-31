@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/pkm/obsidian/media-extended/"}
+{"dg-publish":true,"permalink":"/pkm/obsidian/media-extended/","tags":["blogIdea"]}
 ---
 
 
