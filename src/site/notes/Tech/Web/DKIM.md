@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tech/web/dkim/"}
+{"dg-publish":true,"permalink":"/tech/web/dkim/","tags":["blogIdea, public"]}
 ---
 
 
